@@ -8,40 +8,12 @@
     --transparentWhite : hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
     --gray100 : hsl(0, 0%, 95%); /*(background, headings, buttons)*/
 }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
-body{
-    font-size:15px;
-    font-family: "Lexend Deca", sans-serif;
-    font-optical-sizing: auto;
-}
-.outterCon{
-    display: flex;
-    flex-direction: row;
-    width:80vw;
-    height: 70vh;
+.container{
     border-radius: 10px;
-    position: absolute;
-    top: 15%;
-    left: 10%;
-    margin:0 auto;
-    overflow: hidden;
-}
-.innerCon{
-    display:flex;
-    flex-direction: column;
-    width: 100%;
-    height: 70vh;
-    padding: 30px 30px;
-    justify-content: space-between;
-
-    /* justify-content: center; */
+    overflow-y: hidden;
 }
 .innerCon:nth-child(1){
+    padding-right: 100px;
     background-color: var(--gold500);
 }
 .innerCon:nth-child(2){
@@ -49,46 +21,4 @@ body{
 }
 .innerCon:nth-child(3){
     background-color: var(--green950);
-}
-.carImg{
-    width: 55px;
-    height: 40px;
-    border-radius: 10px;
-}
-.carName{
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--gray100);
-    margin-bottom: 10px;
-}
-.mainParag{
-    font-family: "Lexend Deca", sans-serif;
-    font-optical-sizing: auto;
-    color:var(--transparentWhite);
-    line-height: 1.75;
-
-}
-.btnCon{
-    width: 150px;
-    height: 50px;
-    border-radius: 30px;
-    background-color: var(--gray100);
-    padding:10px 15px;
-    /* text-align: center; */
-}
-
-.btn{
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    line-height: 30px;
- }
-@media only screen and (max-width: 480px) {
-.outterCon{
-    flex-direction: column;
-    height: 90vh;
-    top: 5%;
-
-}
-
 }
